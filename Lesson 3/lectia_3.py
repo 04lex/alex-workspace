@@ -115,19 +115,32 @@
 # print(type(x))
 # print(x)x
 
-suma_in_lei = input("Introduceti suma in RON: ")
-suma_in_lei = float(suma_in_lei)
+# suma_in_lei = input("Introduceti suma in RON: ")
+# suma_in_lei = float(suma_in_lei)
 
-euro_lei = 4.9
-usd_lei = 5.1
+# euro_lei = 4.9
+# usd_lei = 5.1
 
-suma_in_euro = suma_in_lei / euro_lei
-suma_in_usd = suma_in_lei / usd_lei
+# suma_in_euro = suma_in_lei / euro_lei
+# suma_in_usd = suma_in_lei / usd_lei
 
-print("Aveti ", str(suma_in_euro), "Euro")
-print("Aveti ", str(suma_in_usd), "Dolari")
-
-
+# print("Aveti ", str(suma_in_euro), "Euro")
+# print("Aveti ", str(suma_in_usd), "Dolari")
 
 
 
+# Incercarea mea pt 20% tva
+# x = input("Introduceti suma fara TVA: ")
+# x = float(x)
+
+# y = x + x / 20
+
+# print("20 la suta din ",x , "LEI cu TVA este", y)
+
+
+# Silviu
+suma_fara_TVA = float(input("Introduceti suma fara TVA: "))
+TVA = 20
+
+suma_cu_TVA = suma_fara_TVA + 20/100 * suma_fara_TVA
+print(suma_cu_TVA)
