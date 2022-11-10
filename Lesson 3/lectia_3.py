@@ -154,6 +154,13 @@
 # # print(suma_cu_TVA)
 
 
+# Silviu
+# suma_fara_TVA = float(input("Introduceti suma fara TVA: "))
+# TVA = 20
+
+# suma_cu_TVA = suma_fara_TVA + 20/100 * suma_fara_TVA
+# print(suma_cu_TVA)
+
 
 # Incercarea mea pt 20% tva
 # x = input("Introduceti suma fara TVA: ")
@@ -162,6 +169,10 @@
 # y = x + x / 20
 
 # print("20 la suta din ",x , "LEI cu TVA este", y)
+
+
+
+
 
 # Dupa modelul exercitiului anterior, calculati pretul cu TVA al apartamentelor:
 # Daca pretul < 140K, TVA 5%
@@ -178,12 +189,5 @@ if suma_fara_TVA <= 140000:
     print(suma_cu_TVA5)
 elif suma_fara_TVA > 140000:
     print(suma_cu_TVA20)
-
-# Silviu
-suma_fara_TVA = float(input("Introduceti suma fara TVA: "))
-TVA = 20
-
-suma_cu_TVA = suma_fara_TVA + 20/100 * suma_fara_TVA
-print(suma_cu_TVA)
 
 #TEST SYNC
