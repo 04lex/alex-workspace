@@ -95,16 +95,134 @@
 
 # V1 - varianta mea
 
-numar = int(input("Introduceti numarul: "))
-x = numar % 2
+# numar = int(input("Introduceti numarul: "))
+# x = numar % 2
 # % va lua restul din impartirea numarului la 2, rest 0 = s-a impartit si nu are rest => par. 
 # rest = 1... + inseamna ca nu se imparte fix si este impar
 
-if x == 0:
-    print("Numarul este par")
-else:
-    print("Numarul este impar")
+# if x == 0:
+#     print("Numarul este par")
+# else:
+#     print("Numarul este impar")
 
 
 
 
+# V2 - Silviu
+
+# numar = float(input("Introduceti numar: "))
+
+# if numar % 2 == 0 :
+#     print("Numarul este par")
+# else:
+#     print("Numarul este impar")
+
+
+# V3
+
+# numar = float(input("Introduceti numar: "))
+
+# if numar % 2 == 1 :
+#     paritate = "impar"
+# else:
+#     paritate = "par"
+
+# print("Numarul este", paritate)
+
+
+
+# print("I'm taking the Python exam")
+
+# print('I\'\n')
+# \n este un "enter" pentru a trece pe urmatorul rand
+
+# print('I\'m taking the python exam')
+
+
+
+# Nu se poate folosi cuvant rezervat
+# pass = 'hello'
+# print(pass)
+
+# passo = 'hello'
+# print(passo)
+
+
+# has_greeted = True
+# print(has_greeted)
+
+
+# print(9 // 2)
+# Ia primul numar
+
+
+# print("2"*9)
+
+# print("2"*9.4)
+# Nu poate printa 2-ul string de 0.4 ori, ca mai sus
+
+
+
+# print("2"*"9") Nu poate inmulti 2 string-uri
+
+# print(9+"2")
+
+
+# print('a' + 'b'*2 + 4* 'a')
+
+
+# x + y --- x, y = operanzi --- + = operator binar
+
+# x = True
+# print(not x)
+
+# y = False
+# print(not y)
+
+# not, operator unar
+
+
+# x = 100
+# if x <= 100:
+#     print("Aceasta linie se printeaza") # pentru ca este mai mic sau egal
+
+# y = 100
+# if y < 100:
+#     print("Aceasta linie nu se printeaza") # pentru ca nu este stabilit
+
+# Operator de comparatie
+# x = 100
+
+# if x >= 100 or x == 101:
+#     print("Se printeaza")
+
+# Se printeaza, fiind adevarata cel putin una
+
+
+
+# x = 100
+# if x >= 100 and x == 101:
+#     print("Se printeaza")
+
+# Nu se printeaza, deoarece trebuie sa fie amandoua adevarate din cauza lui "and"
+
+
+
+
+# x = 100
+# rezultat = x >= 100 and x == 100
+
+# if rezultat:
+#     print("Se printeaza")
+
+
+# Operator de comparatie
+# x = 100
+
+# if (x >= 100) and (x == 101) and (x != 110):
+#     print("Se printeaza")
+
+# x = -10 * False + True
+
+# y = not x # printeaza False pentru ca not-ul se foloseste pentru bool
+# print(y)
