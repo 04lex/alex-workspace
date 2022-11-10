@@ -185,3 +185,5 @@ TVA = 20
 
 suma_cu_TVA = suma_fara_TVA + 20/100 * suma_fara_TVA
 print(suma_cu_TVA)
+
+#TEST SYNC
