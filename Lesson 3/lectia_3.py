@@ -190,4 +190,4 @@ if suma_fara_TVA <= 140000:
 elif suma_fara_TVA > 140000:
     print(suma_cu_TVA20)
 
-#TEST SYNC
+#TEST
