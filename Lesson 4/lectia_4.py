@@ -219,10 +219,10 @@
 # Operator de comparatie
 # x = 100
 
-# if (x >= 100) and (x == 101) and (x != 110):
-#     print("Se printeaza")
+if (x >= 100) and (x == 101) and (x != 110):
+    print("Se printeaza")
 
-# x = -10 * False + True
+x = -10 * False + True
 
-# y = not x # printeaza False pentru ca not-ul se foloseste pentru bool
-# print(y)
+y = not x # printeaza False pentru ca not-ul se foloseste pentru bool
+print(y)
