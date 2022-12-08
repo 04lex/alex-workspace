@@ -75,3 +75,6 @@ alDoileaAn = 2022
 # x = range(4)
 # for n in x:
 #     print(n)
+
+aTuple = (200, 300, 400, 500, 600, 800)
+print(aTuple[:-1])
