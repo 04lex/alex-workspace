@@ -56,16 +56,16 @@
 
 # Silviu V2 - Generam un numar
 # import random
-# calculator = random.randint(1, 10)
+# calculator = random.randint(1, 100)
 
 # ghicit = input("Introduceti un numar")
 # ghicit = int(ghicit)
 
 # print("Ai ghicit") if calculator == ghicit else print("Nu ai ghicit,", calculator)
 
-# x = 3
-# print("Numarul este", x, ".", sep="")
-# print(f"Numarul este {x}.") Compilatorul formateaza string-ul
+# # x = 3
+# # print("Numarul este", x, ".", sep="")
+# print(f"Numarul este {x}.") # Compilatorul formateaza string-ul
 
 
 
@@ -116,14 +116,14 @@
 # Programul cere de la utilizator sa introduca limba dorita.
 # Dupa introducerea limbii, programul afiseaza mesajul in limba aleasa
 
-limba_user = input(str("Enter language: \n"))
-en = "en"
-ro = "ro"
+# limba_user = input(str("Enter language: \n"))
+# en = "en"
+# ro = "ro"
 
-def language(limba, en):
-    if limba_user == en:
-        print("Hello")
-    else:
-        print("Please choose a language")
+# def language(limba, en):
+#     if limba_user == en:
+#         print("Hello")
+#     else:
+#         print("Please choose a language")
 
 

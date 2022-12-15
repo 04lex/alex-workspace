@@ -76,5 +76,34 @@ alDoileaAn = 2022
 # for n in x:
 #     print(n)
 
-aTuple = (200, 300, 400, 500, 600, 800)
-print(aTuple[:-1])
+# aTuple = (200, 300, 400, 500, 600, 800)
+# print(aTuple[:-1])
+
+# i=0
+# a=0
+# while i<10:
+#     a+=i
+#     i+=2
+
+# print(i)
+
+
+# a=15
+# if a<10:
+#     print("test")
+
+
+var_a = True
+var_b = False
+if var_a==True:
+    if var_b==False:
+        print("1")
+    else: print("2")
+else: print("3")
+
+
+# cities = ["Berlin", "Paris", "Moscow"]
+# for e in range(len(cities)):
+#     cities[e]=cities[e]+"2"
+
+# print (cities)

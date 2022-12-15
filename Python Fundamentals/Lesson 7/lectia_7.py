@@ -124,7 +124,7 @@
 # Silviu
 
 # varsta = int(input("Introduceti varsta: \n"))
-# if not varsta in range(16, 70): echivalent cu -> if varsta in range(0, 16) or varsta in range(70, 1000):
+# if not varsta in range(16, 70): # echivalent cu -> if varsta in range(0, 16) or varsta in range(70, 1000):
 
 # while True:
 #     if not varsta in range(16, 70):
