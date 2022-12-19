@@ -6,8 +6,8 @@
 
 
 # O lista care printeaza toti anii bisecti dintre primul si al doilea an.
-primulAn = 2001 
-alDoileaAn = 2022
+# primulAn = 2001 
+# alDoileaAn = 2022
 
 
 # Varianta 1
@@ -93,13 +93,13 @@ alDoileaAn = 2022
 #     print("test")
 
 
-var_a = True
-var_b = False
-if var_a==True:
-    if var_b==False:
-        print("1")
-    else: print("2")
-else: print("3")
+# var_a = True
+# var_b = False
+# if var_a==True:
+#     if var_b==False:
+#         print("1")
+#     else: print("2")
+# else: print("3")
 
 
 # cities = ["Berlin", "Paris", "Moscow"]
@@ -107,3 +107,63 @@ else: print("3")
 #     cities[e]=cities[e]+"2"
 
 # print (cities)
+
+
+
+# countries = {'UK':'London', 'DE':'Berlin', "FR":'Paris'}
+# list1 = []
+# for c in countries:
+#     list1.append(c)
+# print(list1)
+
+
+# England = {"capital": "London", "population": 8768000}
+# print(England.get("capital"))
+
+
+# s = "aaaa1"
+# print(min(s))
+
+
+# list1 = [1,2,3]
+# list2 = [4,5,6]
+# print(max(list1))
+# print(max(list2))
+
+
+# city1 = "LONDON";
+# city2 = "MOSCOW"
+# print(city1[-4:]+city2[-2:])
+
+
+# capital = "London"
+# if len(capital) == 5:   
+#     print(False)
+# else:   
+#     print(True) 
+
+
+# cities = ('Belgrade', 'Paris', 'Berlin', 'London')
+# print(len(cities))
+
+# d = {'key0':'value0', 'key1':'value1'}
+# print(d['key0'])
+
+
+# England = {"capital": "London", "population": 8768000}
+# print(list(England.keys()))
+
+# lista = {'key2':'val2', 'key1':'val1'}.sort()
+
+# print(lista)
+
+
+
+# m_list = [['e1', 'e2'], ['London', 'Paris'], ['Susan', 'Maria']]
+# print[0][3]
+
+
+
+# cities = [['New York', 'London'], ['Paris', 'Berlin']]
+# cities[0].pop(1)
+# print(cities)
