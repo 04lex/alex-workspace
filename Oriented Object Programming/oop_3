@@ -69,47 +69,47 @@
 
 
 
-class Facultate:
-    def __init__(self, denumire:str, adresa:str):
-        self.denumire = denumire
-        self.adresa = adresa
+# class Facultate:
+#     def __init__(self, denumire:str, adresa:str):
+#         self.denumire = denumire
+#         self.adresa = adresa
 
-    def __str__(self):
-        return f'Facultatea {self.denumire} de la {self.adresa}'
+#     def __str__(self):
+#         return f'Facultatea {self.denumire} de la {self.adresa}'
 
 
-class Student:
-    # Variabila STATICA
-    VARSTA_MINIMA = 16
-    def __init__(self, nume:str, varsta:int, facultate:Facultate):
-        # Variabila publica
-        self.nume = nume
-        # Variabila interna
-        self._varsta = varsta
-        self.facultate = facultate
-        # Variabila privata
-        self.__note = []
+# class Student:
+#     # Variabila STATICA
+#     VARSTA_MINIMA = 16
+#     def __init__(self, nume:str, varsta:int, facultate:Facultate):
+#         # Variabila publica
+#         self.nume = nume
+#         # Variabila interna
+#         self._varsta = varsta
+#         self.facultate = facultate
+#         # Variabila privata
+#         self.__note = []
 
-        # Functie setter pentru varsta
-    def setVarsta(self, noua_varsta):
-        if not isinstance(noua_varsta, int):
-            return
-        elif noua_varsta < Student.VARSTA_MINIMA:
-            return
-        else:
-            self._varsta = noua_varsta
+#         # Functie setter pentru varsta
+#     def setVarsta(self, noua_varsta):
+#         if not isinstance(noua_varsta, int):
+#             return
+#         elif noua_varsta < Student.VARSTA_MINIMA:
+#             return
+#         else:
+#             self._varsta = noua_varsta
 
-        # Functie getter pentru varsta
-    def getVarsta(self):
-        return "Major" if self._varsta > 10 else "Minor"
+#         # Functie getter pentru varsta
+#     def getVarsta(self):
+#         return "Major" if self._varsta > 10 else "Minor"
 
-    def getNote(self):
-        return tuple(self.__note)
+#     def getNote(self):
+#         return tuple(self.__note)
 
-    def setNote(self, *noteNoi):
-        for nota in noteNoi:
-            if isinstance(nota, int) and nota in range (1, 11):
-                self.__note.append(nota)
+#     def setNote(self, *noteNoi):
+#         for nota in noteNoi:
+#             if isinstance(nota, int) and nota in range (1, 11):
+#                 self.__note.append(nota)
 
 
 # Student.VARSTA_MINIMA = 30
@@ -143,4 +143,112 @@ class Student:
 
 # studenta.setVarsta('iuiuiu')
 # print(studenta.getVarsta())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# eu
+ 
+# class STBCard:
+#     def __init__(self, nume:str = None, calatorii:int = 0, credit:int = 0):
+#         self.nume = nume
+#         self.calatorii = calatorii
+#         self.credit = credit
+
+#     def balantaCredit(self):
+#         if self.credit > 0:
+#             return f'Credit: {self.credit}\nCalatorii: {self.calatorii}'
+#         else:
+#             return f"Reincarca cartela, credit {self.credit}, calatorii {self.calatorii}"
+
+#     def showName(self):
+#         if isinstance(self.nume, str):
+#             return f'Nume: {self.nume}'
+#         else:
+#             print("Nume: Nenominal")
+
+    
+
+# card1 = STBCard('Alexandru', 1, 3)
+# print(card1.balantaCredit())
+
+# print(card1.showName())
+
+# print('------------')
+
+# card2 = STBCard(0, 0)
+# print(card2.showName())
+# print(card2.balantaCredit())
+
+
+
+
+
+
+
+
+# silviu
+
+class STBCard:
+    COST_CALATORIE = 3
+
+    def __init__(self, nume:str = "Nenominal", calatorii:int = 0, credit:int = 0):
+
+        self.nume = nume
+        self.calatorii = calatorii
+        self.credit = credit
+    def __str__(self):
+        return f'Cardul lui {self.nume} are {self.calatorii} calatorii si {self.credit} lei.'
+
+    def reincarcaCredit(self, bani):
+        self.credit += bani
+
+    def reincarcaCalatorii(self, calatorii):
+        self.calatorii += calatorii
+
+    def validareCalatorie(self):
+        if self.calatorii > 0:
+            self.calatorii -= 1
+        elif self.credit > STBCard.COST_CALATORIE:
+            self.credit -= STBCard.COST_CALATORIE
+        else:
+            print("Credit insuficient")
+
+
+card1 = STBCard('Juan', 0, 0)
+print(card1.calatorii)
+card1.reincarcaCalatorii(2)
+card1.reincarcaCredit(5)
+print(card1)
+
+card1.validareCalatorie()
+print(card1)
+card1.validareCalatorie()
+print(card1)
+card1.validareCalatorie()
+print(card1)
+card1.validareCalatorie()
+print(card1)
+
+
+
+
+
+# card2 = STBCard(0, 0)
+# print(card2.nume)
 
