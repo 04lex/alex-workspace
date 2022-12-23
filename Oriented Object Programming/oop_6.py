@@ -102,43 +102,43 @@
 # print(masina2)
 
 
-optiuni_vot = ["sarmale", "cozonac", "pomana", "carnati", "piftie"]
+# optiuni_vot = ["sarmale", "cozonac", "pomana", "carnati", "piftie"]
 
-class Vot:
-    def __init__(self, *optiunile):
-        self.optiuni = optiunile
+# class Vot:
+#     def __init__(self, *optiunile):
+#         self.optiuni = optiunile
 
-    def voteaza(self, optiunea):
-        if optiunea in self.optiuni:
-            self.a_fost_exercitat = True
-            self.optiunea_selectat = optiunea
-
-
-class Bec:
-    def __init__(self, voturi):
-        self.voturi = voturi
-
-    def numaraVoturi(self):
-        voturi_valide = 0
-        numarare_voturi = { }
-        for vot in self.voturi:
-            if not vot.a_fost_exercitat():
-                continue
-            else:
-                voturi_valide += 1
-                numarare_voturi[vot.optiunea_selectat] = numarare_voturi.get(vot.optiunea_selectat, 0) + 1
-        return f'Avem {voturi_valide} voturi valide cu voturile {numarare_voturi}'
+#     def voteaza(self, optiunea):
+#         if optiunea in self.optiuni:
+#             self.a_fost_exercitat = True
+#             self.optiunea_selectat = optiunea
 
 
+# class Bec:
+#     def __init__(self, voturi):
+#         self.voturi = voturi
 
-vot1 = Vot(optiuni_vot)
-vot2 = Vot(optiuni_vot)
-vot3 = Vot(optiuni_vot)
-vot4 = Vot(optiuni_vot)
+#     def numaraVoturi(self):
+#         voturi_valide = 0
+#         numarare_voturi = { }
+#         for vot in self.voturi:
+#             if not vot.a_fost_exercitat():
+#                 continue
+#             else:
+#                 voturi_valide += 1
+#                 numarare_voturi[vot.optiunea_selectat] = numarare_voturi.get(vot.optiunea_selectat, 0) + 1
+#         return f'Avem {voturi_valide} voturi valide cu voturile {numarare_voturi}'
 
-BEC([vot1, vot2, vot3, vot4])
 
-vot1.voteaza
+
+# vot1 = Vot(optiuni_vot)
+# vot2 = Vot(optiuni_vot)
+# vot3 = Vot(optiuni_vot)
+# vot4 = Vot(optiuni_vot)
+
+# BEC([vot1, vot2, vot3, vot4])
+
+# vot1.voteaza
 
 
 
