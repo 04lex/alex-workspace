@@ -167,3 +167,37 @@
 # cities = [['New York', 'London'], ['Paris', 'Berlin']]
 # cities[0].pop(1)
 # print(cities)
+
+
+# lst = ["a", "b", "c"]
+# lst_iterator = iter(lst)
+# print(next(lst_iterator), next(lst_iterator))
+
+
+
+# x = lambda b,a : 10*b+a
+# print(x(2,4))
+
+
+# def x2(a):   
+#    for x in range(a):
+#        yield x*x
+
+# print(list(x2(4)))
+
+# def first():
+#     print("1")
+# def first():
+#     print("2")
+# first()
+
+
+
+# def x2(a):
+#     return a*a
+# x = [1,2,3,4,5]
+# print(list(map(x2, x))) 
+
+
+import math as mat
+print(mat.pi)
