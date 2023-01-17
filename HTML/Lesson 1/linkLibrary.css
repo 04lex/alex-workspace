@@ -1,0 +1,10 @@
+body {
+    background-color: gray;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    background-color: blueviolet;
+}
