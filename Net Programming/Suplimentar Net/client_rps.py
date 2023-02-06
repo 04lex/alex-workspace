@@ -1,7 +1,7 @@
 import socket
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('192.168.1.17', 8005))
+client.connect(('127.0.0.1', 8104))
 
 first_message = client.recv(1024).decode('utf-8')
 client_choice = input(first_message + "\n")
