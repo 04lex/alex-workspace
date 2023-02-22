@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form method="get">
+    <p>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+    </p>
+    <p>
+        <label for="password" minlength="8" maxlength="30">Password</label>
+        <input type="password" id="pass" name="pass">
+    </p>
+    <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+    </p>
+    <p>
+        <label for="observatii">Observatii</label>
+        <textarea id="obs" name="obs"></textarea>
+    </p>
+    <p><input type="submit" value="Submit"></p>
+
+    </form>
+    <form>
+        <input type="radio" name="cursuri" value="HTML" id="html" checked>
+        <label for="html">HTML</label><br>
+        <input type="radio" name="cursuri" value="CSS" id="css" disabled>
+        <label for="css">CSS</label><br>
+        <input type="radio" name="cursuri" value="JS" id="JS">
+        <label for="javascript">JavaScript</label>
+        <br>
+        <input type="checkbox" name="cursuri" value="HTML" id="htmlC" checked disabled>
+        <label for="html">HTML</label><br>
+        <input type="checkbox" name="cursuri" value="CSS" id="cssC">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" name="cursuri" value="JS" id="jsC">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+</body>
+</html>
+
+
+    

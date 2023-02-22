@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th, tr{
+            border: 2px red solid;
+            padding: 10px;
+        }
+        th{
+            background-color: maroon;
+            padding: 0px;
+        }
+        table{
+            border-collapse: collapse;
+            color: white;
+            width: 40%;
+        }
+        td{
+            height: 20px;
+        }
+        td:nth-child(1){
+            background-color: orange;
+        }
+        td:nth-child(2){
+            background-color: blue;
+        }
+        td:nth-child(3){
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <table style="color: white">
+        <tr class="head">
+            <td>Roll No</td>
+            <td>Name</td>
+            <td>Team</td>
+        </tr>
+        <tr>
+            <td class="roll">1001</td>
+            <td class="name">John</td>
+            <td class="team">Red</td>
+        </tr>
+        <tr>
+            <td class="roll">1003</td>
+            <td class="name">Henry</td>
+            <td class="team">Green</td>
+        </tr>
+    </table>
+</body>
+</html>
