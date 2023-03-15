@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .bluebackground{
+            background-color: blue;
+        }
+        .redbackground{
+            background-color: red;
+        }
+    </style>
+    <div class="bluebackground">Primul</div>
+    <div class="redbackground">Al doilea</div>
+    <button onclick="schimba()">Interschimba</button>
+
+    <script>
+        var divs = document.getElementsByTagName('div')
+        // var divs = document.querySelectorAll('div')
+
+
+        // Versiunea 1 (index3) = Schimba clasele din una intr-alta
+
+        function schimba(){
+
+            aux = divs[0].className
+            divs[0].className = divs[1].className
+            divs[1].className = aux
+
+        }
+    </script>
+</body>
+</html>
