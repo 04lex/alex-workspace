@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img  alt="" class="rc" onclick=" schimbaImaginea() ">
+    <img  alt="" class="rc" onclick=" schimbaImaginea() ">
+
+
+    <script>
+        var img_gazda = document.querySelectorAll('img')[0]
+        var img_oaspete = document.querySelectorAll('img')[1]
+
+        "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/UEFA_Champions_League.svg/450px-UEFA_Champions_League.svg.png"
+
+        var sources = [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/260px-Logo_of_AC_Milan.svg.png",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/SL_Benfica_logo.svg/380px-SL_Benfica_logo.svg.png",
+           "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SSC_Neapel.svg/340px-SSC_Neapel.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/360px-FC_Internazionale_Milano_2021.svg.png"
+        ]
+        i = 0
+        j = 1
+        function schimbaImaginea(){
+            console.log('Ar trebui schimbata imaginea...')
+
+            img_gazda.src =  sources[i]
+            img_oaspete.src =  sources[j]
+
+            i++
+            j++
+
+            if (i === sources.length){
+                i = 0
+            }
+            if (j === sources.length){
+                j = 0
+            }
+        }
+
+        	schimbaImaginea()
+
+        var  interval_extragere = setInterval(schimbaImaginea, 100)
+        var  body =  document.body
+
+        function extragere(){
+            clearInterval(interval_extragere)
+            body.onclick = randomize
+        }
+
+        function randomize(){
+            interval_extragere = setInterval(schimbaImaginea, 100)
+            body.onclick = extragere
+        }
+
+        body.onclick = extragere
+
+    </script>
+
+</body>
+</html>
