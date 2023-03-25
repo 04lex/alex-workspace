@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" class="rc" onclick="schimbaImaginea()">
+
+    <script>
+        var img = document.querySelector('img')
+
+        var sources = [
+            "https://media.promotor.ro/5TYYQUbNGbVecWfB40_xFBhHy-A=/1077x700/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.promotor.ro%2Fwp-content%2Fuploads%2F2020%2F06%2Fbmw-m5-053.jpg",
+            "https://media.promotor.ro/_ekHKjQbwVcLNOD5R48yBsvJehE=/557x700/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.promotor.ro%2Fwp-content%2Fuploads%2F2020%2F06%2Fbmw-m5-054.jpg",
+            "https://media.promotor.ro/aqr-5XGaHd765GTkfVy37OZwhEA=/467x700/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.promotor.ro%2Fwp-content%2Fuploads%2F2020%2F06%2Fbmw-m5-055.jpg",
+            "https://media.promotor.ro/ySxOgzvCkIC6IsOazWkwRhDF11g=/990x700/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.promotor.ro%2Fwp-content%2Fuploads%2F2020%2F06%2Fbmw-m5-064.jpg"
+        ]
+        i = 0
+        function schimbaImaginea(){
+            console.log('Imaginea se schimba...')
+
+            img.src = sources[i]
+
+            i++
+
+            if (i === sources.length){
+                i = 0
+            }
+        }
+        schimbaImaginea()
+
+        setInterval(schimbaImaginea, 3000)
+    </script>
+
+</body>
+</html>

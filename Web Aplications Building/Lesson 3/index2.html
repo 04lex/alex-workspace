@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" class="rc" onclick="schimbaImaginea()">
+    <img src="" alt="" class="rc" onclick="schimbaImaginea()">
+
+    <script>
+        var img_gazda = document.querySelectorAll('img')[0]
+        var img_oaspete = document.querySelectorAll('img')[1]
+
+        "https://media.promotor.ro/aqr-5XGaHd765GTkfVy37OZwhEA=/467x700/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.promotor.ro%2Fwp-content%2Fuploads%2F2020%2F06%2Fbmw-m5-055.jpg"
+
+        var sources = [
+            "https://media.promotor.ro/5TYYQUbNGbVecWfB40_xFBhHy-A=/1077x700/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.promotor.ro%2Fwp-content%2Fuploads%2F2020%2F06%2Fbmw-m5-053.jpg",
+            "https://media.promotor.ro/_ekHKjQbwVcLNOD5R48yBsvJehE=/557x700/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.promotor.ro%2Fwp-content%2Fuploads%2F2020%2F06%2Fbmw-m5-054.jpg",
+            "https://media.promotor.ro/aqr-5XGaHd765GTkfVy37OZwhEA=/467x700/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.promotor.ro%2Fwp-content%2Fuploads%2F2020%2F06%2Fbmw-m5-055.jpg",
+            "https://media.promotor.ro/ySxOgzvCkIC6IsOazWkwRhDF11g=/990x700/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.promotor.ro%2Fwp-content%2Fuploads%2F2020%2F06%2Fbmw-m5-064.jpg"
+        ]
+        i = 0
+        j = 1
+
+        function schimbaImaginea(){
+            console.log('Imaginea se schimba...')
+
+            img_gazda.src = sources[i]
+            img_oaspete.src = sources[i]
+
+            i++
+            j++
+
+            if (i === sources.length){
+                i = 0
+            }
+            if (j === sources.length){
+                j = 0
+            }
+        }
+        schimbaImaginea()
+
+        var interval_extragere = setInterval(schimbaImaginea, 500)
+
+        function extragere(){
+            clearInterval(interval_extragere)
+        }
+
+        var body = document.body
+        body.addEventListener('click', extragere)
+    </script>
+
+</body>
+</html>
