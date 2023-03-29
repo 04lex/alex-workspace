@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
     <img  alt="" class="rc">
     <img  alt="" class="rc">
 
     <div id="extragere">
-
 
     </div>
 
@@ -25,33 +25,38 @@
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/260px-Logo_of_AC_Milan.svg.png",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/SL_Benfica_logo.svg/380px-SL_Benfica_logo.svg.png",
            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SSC_Neapel.svg/340px-SSC_Neapel.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/360px-FC_Internazionale_Milano_2021.svg.png"
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/360px-FC_Internazionale_Milano_2021.svg.png",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/360px-Chelsea_FC.svg.png",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/360px-Manchester_City_FC_badge.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/360px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/300px-Real_Madrid_CF.svg.png"
+
         ]
+        var extrase = [ ]
+
 
         var i, j
         function schimbaImaginile(){
             console.log('Ar trebui schimbata imaginea...')
-
-            i = Math.floor(Math.random() * sources.length)
+            i  = Math.floor(Math.random() * sources.length)
             j = Math.floor(Math.random() * sources.length)
 
-            while(i === j){
-                j = Math.random(sources.length)
+            while(i ===j){
+                j = Math.floor(Math.random() * sources.length)
             }
 
-            img_gazda.src = sources[i]
-            img_oaspete.src = sources[j]
+            img_gazda.src =  sources[i]
+            img_oaspete.src =  sources[j]
         }
 
-
-        var  interval_extragere = setInterval(schimbaImaginile, 100)
+    
+        var  interval_extragere
         var  body =  document.body
 
         function extragere(){
             clearInterval(interval_extragere)
-            body.onclick = randomize
-
-            console.log("au fost extrase i = ", i, "si j = ", j)
+            console.log("au fost extrase i = ", i,  "si j = ", j)
+            
 
             var echipa1 = document.createElement("img")
             echipa1.src = sources[i]
@@ -59,23 +64,41 @@
             echipa2.src = sources[j]
 
             div_extragere.appendChild(echipa1)
+            div_extragere.appendChild(echipa2)
 
+            var br = document.createElement("br")
+            div_extragere.appendChild(br)
 
-            extrase.push(sources[i])
-            extrase.push(sources[j])
-
+            extrase.push( sources[i])
+            extrase.push( sources[j])
             console.log(extrase)
 
-            sources.splice(i, 1)
-            sources.splice(j, 1)
+            
+            if (i < j){
+                sources.splice(j, 1)
+                sources.splice(i, 1)    
+            } else{
+                sources.splice(i, 1)
+                sources.splice(j, 1)
+            }
+            
+            if (sources.length != 0) {
+                body.onclick = randomize
+            } else{
+                body.removeChild(img_oaspete)
+                body.removeChild(img_gazda)
+
+            }
+            
         }
 
         function randomize(){
+
             interval_extragere = setInterval(schimbaImaginile, 100)
             body.onclick = extragere
         }
 
-        body.onclick = extragere
+        randomize()
 
     </script>
 
