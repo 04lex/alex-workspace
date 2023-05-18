@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function getStudent() {
+            var studentId = document.getElementById('studentId').value;
+            $.ajax({
+                url: '/students/' + studentId,
+                type: 'GET',
+                success: function(student) {
+                    // Use the student information for display or further processing
+                    console.log(student);
+                },
+                error: function() {
+                    console.log('Student not found');
+                }
+            });
+        }
+
+        function addStudent() {
+            var studentData = {
+                student_id: document.getElementById('studentId').value,
+                first_name: document.getElementById('firstName').value,
+                last_name: document.getElementById('lastName').value,
+                average_grade: parseFloat(document.getElementById('averageGrade').value)
+            };
+
+            $.ajax({
+                url: '/students',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(studentData),
+                success: function(response) {
+                    console.log(response.message);
+                },
+                error: function() {
+                    console.log('Error adding student');
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Student Management</h1>
+
+    <h2>Add Student</h2>
+    <input type="text" id="studentId" placeholder="Student ID">
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <input type="text" id="averageGrade" placeholder="Average Grade">
+    <button onclick="addStudent()">Add</button>
+
+    <h2>Get Student</h2>
+    <input type="text" id="studentId" placeholder="Student ID">
+    <button onclick="getStudent()">Get</button>
+</body>
+</html>
