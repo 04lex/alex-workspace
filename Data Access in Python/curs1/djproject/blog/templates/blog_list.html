@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block mainblock %}
+
+     <h1> Mainblock din blog_list </h1>
+
+    {% for post in posts  %}
+    <a href="{{ post.generate_slug }}">
+            <h3> {{ post.title }} </h3>
+    </a>
+
+        <p> {{ post.description }} </p>
+    {% endfor %}
+
+{% endblock mainblock %}
+
