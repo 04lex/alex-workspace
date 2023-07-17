@@ -15,6 +15,5 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    # @property
     def generate_slug(self):
         return reverse('blog:blog_details_view', args=[self.slug])

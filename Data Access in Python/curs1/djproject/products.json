@@ -1,0 +1,162 @@
+[
+{
+    "model": "store.category",
+    "pk": 1,
+    "fields": {
+        "name": "Alimentare",
+        "slug": "alimentare"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 2,
+    "fields": {
+        "name": "Alcolice",
+        "slug": "alcolice"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 3,
+    "fields": {
+        "name": "Farmaceutice",
+        "slug": "farmaceutice"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 4,
+    "fields": {
+        "name": "Sosete ieftine",
+        "slug": "sosete-ieftine"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 5,
+    "fields": {
+        "name": "Jucarii",
+        "slug": "jucarii"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+        "name": "Mici la caserola",
+        "slug": "mici-la-caserola",
+        "category": 1,
+        "description": "",
+        "image": "",
+        "price": "20.00",
+        "available": true,
+        "created": "2023-05-02T15:27:19.280Z",
+        "updated": "2023-05-02T15:27:19.280Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+        "name": "Mustar",
+        "slug": "mustar",
+        "category": 1,
+        "description": "",
+        "image": "",
+        "price": "5.00",
+        "available": true,
+        "created": "2023-05-02T15:27:58.727Z",
+        "updated": "2023-05-02T15:27:58.727Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 3,
+    "fields": {
+        "name": "Rosii",
+        "slug": "rosii",
+        "category": 1,
+        "description": "",
+        "image": "",
+        "price": "15.00",
+        "available": true,
+        "created": "2023-05-02T15:28:15.851Z",
+        "updated": "2023-05-02T15:28:15.851Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 4,
+    "fields": {
+        "name": "Colebil",
+        "slug": "colebil",
+        "category": 3,
+        "description": "",
+        "image": "",
+        "price": "25.00",
+        "available": true,
+        "created": "2023-05-02T15:29:51.703Z",
+        "updated": "2023-05-02T15:29:51.703Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 5,
+    "fields": {
+        "name": "Nurofen",
+        "slug": "nurofen",
+        "category": 3,
+        "description": "",
+        "image": "",
+        "price": "0.03",
+        "available": true,
+        "created": "2023-05-02T15:30:24.055Z",
+        "updated": "2023-05-02T15:30:24.055Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 6,
+    "fields": {
+        "name": "Adibas",
+        "slug": "adibas",
+        "category": 4,
+        "description": "",
+        "image": "",
+        "price": "3.00",
+        "available": true,
+        "created": "2023-05-02T15:31:07.151Z",
+        "updated": "2023-05-02T15:31:07.151Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 7,
+    "fields": {
+        "name": "Spider Man",
+        "slug": "spider-man",
+        "category": 4,
+        "description": "",
+        "image": "",
+        "price": "20.00",
+        "available": true,
+        "created": "2023-05-02T15:31:37.119Z",
+        "updated": "2023-05-02T15:31:37.119Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 8,
+    "fields": {
+        "name": "Batman",
+        "slug": "batman",
+        "category": 4,
+        "description": "",
+        "image": "",
+        "price": "10.00",
+        "available": true,
+        "created": "2023-05-02T15:31:55.373Z",
+        "updated": "2023-05-02T15:31:55.373Z"
+    }
+}
+]

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block mainblock %}
+
+     <h1> Mainblock din store_list </h1>
+
+    {% for product in products  %}
+    <a href="{{ product.generate_slug }}">
+            <h3> {{ product.name }} </h3>
+    </a>
+
+        <p> {{ product.description }} </p>
+    {% endfor %}
+
+{% endblock mainblock %}
+
