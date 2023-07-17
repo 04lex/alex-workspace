@@ -6,9 +6,9 @@ Tags: short, game, puzzle
 import random
 
 # number of digits for guess, from 1 to 10.
-NUM_DIGITS = 3
+NUM_DIGITS = 11
 # number of guesses allowed
-MAX_GUESSES = 10
+MAX_GUESSES = 5
 
 def main():
     print('''Bagels, a deductive logic game
