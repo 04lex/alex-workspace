@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management App</title>
+  <script src="jquery-3.7.0.min.js"></script>
+</head>
+<body>
+  <h1>Student Management App</h1>
+
+  <h2>Add Student</h2>
+  <form id="add-student-form">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" required><br>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" required><br>
+
+    <label for="student-id">Student ID:</label>
+    <input type="text" id="student-id" required><br>
+
+    <label for="average-grade">Average Grade:</label>
+    <input type="text" id="average-grade" required><br>
+
+    <button type="submit">Add Student</button>
+  </form>
+
+  <h2>Get Student Information</h2>
+  <form id="get-student-form">
+    <label for="student-id-info">Student ID:</label>
+    <input type="text" id="student-id-info" required><br>
+
+    <button type="submit">Get Student Information</button>
+  </form>
+
+  <h2>Student Information</h2>
+  <div id="student-info"></div>
+
+  <script>
+    $(document).ready(function() {
+      $('#add-student-form').submit(function(event) {
+        event.preventDefault();
+        var formData = {
+          'first_name': $('#first-name').val(),
+          'last_name': $('#last-name').val(),
+          'student_id': $('#student-id').val(),
+          'average_grade': $('#average-grade').val()
+        };
+
+        $.ajax({
+          type: 'POST',
+          url: 'http://localhost:5000/students',
+          data: JSON.stringify(formData),
+          contentType: 'application/json',
+          success: function(response) {
+            alert(response.message);
+            $('#add-student-form')[0].reset();
+          },
+          error: function(error) {
+            alert('Error: ' + error.responseJSON.error);
+          }
+        });
+      });
+
+      $('#get-student-form').submit(function(event) {
+        event.preventDefault();
+        var studentId = $('#student-id-info').val();
+
+        $.ajax({
+          type: 'GET',
+          url: 'http://localhost:5000/students/' + studentId,
+          success: function(response) {
+            $('#student-info').html(JSON.stringify(response));
+          },
+          error: function(error) {
+            alert('Error: ' + error.responseJSON.error);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
