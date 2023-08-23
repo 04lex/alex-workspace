@@ -1,0 +1,1 @@
+Salut {{user.username}}, sunt eu ... verificarea

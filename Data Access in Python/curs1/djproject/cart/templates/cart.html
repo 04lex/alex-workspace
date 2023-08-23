@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if nr_produse %}
+         <h1> Aveti {{nr_produse}} de produse in cart </h1>
+
+        {% for product in products   %}
+           <h3> {{ product.name }} </h3>  
+        {% endfor %}
+
+
+    {% else %}
+         <h1> Nu aveti nimic in cart </h1>
+    {% endif %}
+
+    <form action="{% url "cart:clear" %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Empty Cart">
+    </form>
+    
+
+</body>
+</html>

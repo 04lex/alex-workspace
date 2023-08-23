@@ -4,7 +4,7 @@
      <h1> Mainblock din store_list </h1>
 
     {% for product in products  %}
-    <a href="{{ product.generate_slug }}">
+    <a href="{{ product.get_absolute_url }}">
             <h3> {{ product.name }} </h3>
     </a>
 

@@ -27,7 +27,9 @@ class Product(models.Model):
     created = models.DateTimeField(auto_now=True)
     updated = models.DateTimeField(auto_now_add=True)
 
-    def generate_slug(self):
+
+
+    def get_absolute_url(self):
         return reverse('store:store_details_view', args=[self.slug])
 
     def __str__(self):

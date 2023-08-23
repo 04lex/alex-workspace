@@ -4,4 +4,9 @@
     <h1> {{ product.name }}</h1>
     <p> {{ product.price }} RON </p>
 
+     <form action="{% url "cart:add" %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Add To Cart">
+    </form>
+
 {% endblock mainblock %}
