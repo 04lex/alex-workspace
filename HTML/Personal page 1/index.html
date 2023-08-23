@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seven Segment - Personal Webpage</title>
+  <link rel="icon" href="/Users/lexbook/Downloads/pythonfavicon.png" type="image/x-icon">
+
+  <style>
+    body {
+      background-color: #222;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffcc00;
+        color: #333;
+        padding: 2rem 0;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        margin-right: 37cm;
+        ;
+    }
+
+    .logo img {
+        max-width: 50px;
+    }
+
+    .header-content {
+        flex-grow: 1;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .header-description {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 0.5rem 0;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .content {
+      padding: 2rem;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .project-card {
+      background-color: #333;
+      color: #eee;
+      padding: 1.5rem;
+      border-radius: 10px;
+      flex: 1 1 calc(33.33% - 2rem);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .project-card p {
+      flex-grow: 1;
+    }
+    .project-link {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .project-link a {
+      background-color: #ffcc00;
+      color: #333;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .project-link a:hover {
+      background-color: #555;
+    }
+    .latest-blog, .tech-tips {
+      background-color: #333;
+      color: #eee;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      margin-top: 2rem;
+    }
+    .latest-blog h2, .tech-tips h2 {
+      margin-top: 0;
+    }
+    .latest-blog p, .tech-tips p {
+      margin-top: 1rem;
+    }
+
+    .newsletter {
+      background-color: #333;
+      color: #eee;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      margin-top: 2rem;
+    }
+
+    .newsletter h2 {
+      margin-top: 0;
+    }
+
+    .newsletter p {
+      margin-top: 1rem;
+    }
+
+    .newsletter form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .newsletter label {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .newsletter input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter button {
+      background-color: #ffcc00;
+      color: #333;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .newsletter button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: #eee;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+        <h1>Welcome to Seven Segment's Webpage</h1>
+
+    <div class="logo">
+        <img src="6533101.png" alt="Seven Segment Logo">
+    </div>
+
+    <p class="header-description">Exploring the World of Technology</p>
+  </header>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="content" id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Seven Segment, a tech enthusiast and lifelong learner. I'm passionate about coding, electronics, and everything in between. Join me on my journey of exploration and discovery in the world of technology.</p>
+  </div>
+  <div class="content" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Project 1: Interactive Widget</h3>
+        <p>Check out my interactive widget that demonstrates the principles of seven-segment displays. Have fun playing with different patterns and numbers!</p>
+        <div class="project-link">
+          <a href="widget.html">View Widget</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Project 2: IoT Temperature Monitor</h3>
+        <p>Explore my IoT temperature monitoring system. Discover how I used sensors and cloud technology to keep track of temperature and humidity remotely.</p>
+        <div class="project-link">
+          <a href="iot.html">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Project 3: Coding Blog</h3>
+        <p>Dive into my coding blog where I share tips, tricks, and tutorials on various programming languages and technologies. Join the discussion and learn together!</p>
+        <div class="project-link">
+          <a href="blog.html">Visit Blog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you have any questions, ideas, or just want to say hello, feel free to reach out to me at <a href="mailto:test@admin.com">test@admin.com</a>. I'm always excited to connect with fellow tech enthusiasts!</p>
+  </div>
+  <div class="content">
+    <div class="latest-blog">
+      <h2>Latest Blog Post</h2>
+      <h3>Responsive Web Design Techniques</h3>
+      <p>Responsive web design ensures your websites look and function well on all devices. Learn key techniques to create adaptive and user-friendly designs.</p>
+      <div class="project-link">
+        <a href="blog.html">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="tech-tips">
+      <h2>Tech Tips</h2>
+      <p>Stay updated with the latest tech tips and tricks. Learn how to optimize your workflow, troubleshoot common issues, and improve your overall productivity.</p>
+      <div class="project-link">
+        <a href="tech-tips.html">Explore Tips</a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay updated with the latest tech news, tutorials, and more!</p>
+      <form action="your-subscribe-endpoint" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Seven Segment | Created with ❤️</p>
+  </footer>
+</body>
+</html>
