@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Blog</title>
+  <style>
+    body {
+      background-color: #222;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffcc00;
+      padding: 1rem;
+      color: #333;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .content {
+      padding: 2rem;
+    }
+    .post {
+      background-color: #333;
+      color: #eee;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .post h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .post p {
+      margin: 10px 0;
+    }
+    .post a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .post a:hover {
+      color: #555;
+    }
+
+    /* back home button */
+
+    .home-button {
+      background-color: #ffcc00;
+      color: #333;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .home-button:hover {
+      background-color: #555;
+      color: #eee;
+    }
+
+    footer {
+      background-color: #333;
+      color: #eee;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* Styling for Disqus Comments Section */
+  #disqus_thread {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  #disqus_thread h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #disqus_thread p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  #disqus_thread a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  #disqus_thread a:hover {
+    color: #555;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Coding Blog</h1>
+  </header>
+  <div class="content">
+    <h2>Latest Posts</h2>
+    <div class="post">
+      <h3>Getting Started with Python</h3>
+      <p>Learn the basics of Python programming and explore its syntax, data types, and control structures.</p>
+      <a href="python-intro.html">Read More</a>
+    </div>
+    <div class="post">
+      <h3>Responsive Web Design Techniques</h3>
+      <p>Discover essential tips and tricks for creating responsive and mobile-friendly web designs.</p>
+      <a href="responsive-design.html">Read More</a>
+    </div>
+    
+    <a href="index.html" class="home-button">Home</a>
+    <!-- Add more posts as needed -->
+  </div>
+  <div id="disqus_thread"></div>
+  <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://seven-segment-test.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <footer>
+    <p>&copy; 2023 Seven Segment | Created with ❤️</p>
+  </footer>
+</body>
+</html>

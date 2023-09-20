@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seven Segment Widget</title>
+  <style>
+    body {
+      background-color: black;
+      color: yellow;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .widget {
+      text-align: center;
+    }
+    .segment {
+      width: 40px;
+      height: 80px;
+      background-color: black;
+      border: 2px solid yellow;
+      margin: 2px;
+      display: inline-block;
+      position: relative;
+    }
+    .segment.on {
+      background-color: yellow;
+    }
+    .segment.a {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .segment.b {
+      top: 10px;
+      right: 0;
+    }
+    /* ... (similarly define segments c to g) */
+    .segment.dot {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 6px;
+      background-color: yellow;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="widget">
+    <div class="segment a"></div>
+    <div class="segment b"></div>
+    <!-- ... (define segments c to g) -->
+    <div class="segment dot"></div>
+  </div>
+  <script>
+    const segments = document.querySelectorAll('.segment');
+    
+    function toggleSegment(segment) {
+      segment.classList.toggle('on');
+    }
+    
+    segments.forEach(segment => {
+      segment.addEventListener('click', () => {
+        toggleSegment(segment);
+      });
+    });
+  </script>
+</body>
+</html>
