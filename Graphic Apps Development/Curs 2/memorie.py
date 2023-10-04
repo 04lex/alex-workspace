@@ -59,9 +59,23 @@ def reveal(index):
             REVEALED_BUTTONS_INDEX.append(PUSHED_BUTTONS_INDEX.pop())
             REVEALED_BUTTONS_INDEX.append(PUSHED_BUTTONS_INDEX.pop())
         else:
+<<<<<<< HEAD
             print("Nu sunt de acceasi valoare")
             first_button.after(500, hide)
            
+=======
+            print("Nu sunt aceeasi valoare")
+            first_button.after(200, lambda x=0:first_button.config(text=f'{PUSHED_BUTTONS_INDEX[0]}'))
+            second_button.config(text=f'{PUSHED_BUTTONS_INDEX[1]}')
+        PUSHED_BUTTONS_INDEX.clear()
+
+
+
+
+window = tkinter.Tk()
+window.title("League of Legends")
+window.geometry("600x600+300+500")
+>>>>>>> bd6e5f6 (mac)
 
 window =  tkinter.Tk()
 window.title("Memorie")
