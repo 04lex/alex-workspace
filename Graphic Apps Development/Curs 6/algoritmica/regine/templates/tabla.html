@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .casuta{
+            /* width:40px; */
+            /* height:40px; */
+            background-color:red;
+            margin:5px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size: 50px;
+
+        }
+        #tabla {
+            display:grid;
+            grid-template-columns: repeat( {{N}}, 1fr);
+            grid-template-rows: repeat( {{N}}, 1fr);
+            width: min(90vw, 90vh);
+            height:  min(90vw, 90vh);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1> Problema reginelor  </h1>
+
+    <div id="tabla">
+        {% for i in range_N %}
+            {% for j in range_N %}
+                <div class="casuta">
+          
+
+               {% if i == 2 %}
+                    {% if j == 0 %}
+                         &#9819;
+                    {% endif %}
+               {% endif %}
+
+               {% if i == 1 %}
+                    {% if j == 1 %}
+                         &#9819;
+                    {% endif %}
+               {% endif %}
+
+               {% if i == 3 %}
+                    {% if j == 3 %}
+                         &#9819;
+                    {% endif %}
+               {% endif %}
+
+               {% if i == 2 %}
+                    {% if j == 0 %}
+                         &#9819;
+                    {% endif %}
+               {% endif %}
+
+              
+                </div>
+            {% endfor %}
+         {% endfor %}
+
+    
+    </div>
+
+
+</body>
+</html>
