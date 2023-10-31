@@ -1,0 +1,29 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE people SYSTEM "people.dtd">
+
+<people xmlns:foaf="http://xmlns.com/foaf/0.1">
+    <foaf:Person>
+        <foaf:name>
+            <firstName>Vasile</firstName>
+            <lastName>Popescu</lastName>
+        </foaf:name>
+        <alive isAlive="true"/> <!--Self-closing tag-->
+    </foaf:Person>
+    <foaf:Person>
+        <foaf:name>
+            <firstName>Adri&lt;an</firstName>
+            <lastName>O&apos;Dumitrascu</lastName>
+        </foaf:name>
+        <alive isAlive="true"/>
+    </foaf:Person>
+    <ruleaza>
+        <![CDATA[ 
+        <script>
+            alert('Salut!');
+        </script
+        <script>
+            console.log('Salut!');
+        </script>
+        ]]>
+    </ruleaza>
+</people>

@@ -1,0 +1,10 @@
+<!ELEMENT people (foaf:Person+, ruleaza)>
+<!ATTLIST people xmlns:foaf %URI; #IMPLIED>
+<!ELEMENT foaf:Person (foaf:name, alive)>
+<!ELEMENT foaf:name (firstName, lastName)>
+<!ELEMENT alive (#PCDATA)>
+<!ATTLIST alive isAlive CDATA #REQUIRED>
+
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT ruleaza (#PCDATA)>

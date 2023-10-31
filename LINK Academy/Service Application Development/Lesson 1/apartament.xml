@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<bloc_apartamente>
+    <apartament>
+
+        <!-- hol -->
+        <hol>Hol
+            <suprafata>15 m2</suprafata>
+            <tip_podea>gresie</tip_podea>
+            <culoare_pereti>albastru deschis</culoare_pereti>
+            
+        </hol>
+
+        <!-- dormitor -->
+        <dormitor>Dormitor King
+            <suprafata>35 m2</suprafata>
+            <tip_podea>parchet</tip_podea>
+            <culoare_pereti>negru</culoare_pereti>
+            <scaune>1</scaune>
+            <birou>1</birou>
+        </dormitor>
+        
+        <!-- sufragerie -->
+        <sufragerie>Living Room
+            <suprafata>49 m2</suprafata>
+            <tip_podea>parchet</tip_podea>
+            <culoare_pereti>alb</culoare_pereti>
+            <masa isTrue="true" />
+            <scaune>4</scaune>
+        </sufragerie>
+
+
+            
+    </apartament>
+        
+
+</bloc_apartamente>
