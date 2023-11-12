@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seven Segment - Personal Webpage</title>
+  <title>Seven Segment</title>
   <link rel="icon" href="/Users/lexbook/Downloads/pythonfavicon.png" type="image/x-icon">
 
   <style>
@@ -23,6 +23,10 @@
         padding: 2rem 0;
         text-align: center;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .myname {
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .logo {
@@ -68,12 +72,27 @@
     .content {
       padding: 2rem;
     }
+
     .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
     }
+
+    /* mobile */
+    @media (max-width: 767px) {
+        .projects {
+            display: grid;
+        }
+    }
+
+    /* desktop browser */
+    @media (min-width: 768px) {
+        .projects {
+            display: flex;
+        }
+    }
+
     .project-card {
       background-color: #333;
       color: #eee;
@@ -188,12 +207,15 @@
 </head>
 <body>
   <header>
-    <div class="header-content">
-        <h1>Welcome to Seven Segment's Webpage</h1>
-
-    <div class="logo">
+    <!-- <div class="logo">
         <img src="6533101.png" alt="Seven Segment Logo">
-    </div>
+    </div> -->
+
+    <div class="header-content">
+        <h1>Seven Segment</h1>
+        <h3 id="myname">by Daniel Alexandru</h3>
+
+    
 
     <p class="header-description">Exploring the World of Technology</p>
   </header>
@@ -204,7 +226,7 @@
   </nav>
   <div class="content" id="about">
     <h2>About Me</h2>
-    <p>Hello! I am Seven Segment, a tech enthusiast and lifelong learner. I'm passionate about coding, electronics, and everything in between. Join me on my journey of exploration and discovery in the world of technology.</p>
+    <p>Hello! I am Seven Segment, a tech enthusiast and lifelong learner. I'm passionate about coding, electronics, and everything in between. Join me on my journey of exploration and discovery in the world of technology through my website.</p>
   </div>
   <div class="content" id="projects">
     <h2>Projects</h2>
