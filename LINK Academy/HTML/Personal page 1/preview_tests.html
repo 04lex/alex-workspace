@@ -6,15 +6,11 @@
   <title>Interactive Widget</title>
   <link rel="icon" href="interactive_logo.png" type="image/x-icon">
 
-  <!-- handwriting font rel -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Zeyada&display=swap" rel="stylesheet">
-
   <style>
     body {
       background-color: black;
       color: yellow;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       display: flex;
@@ -44,7 +40,6 @@
       position: relative;
     }
 
-
     .segment.on {
       background-color: yellow;
     }
@@ -64,7 +59,7 @@
 
     .segment.dot {
       bottom: 0;
-      left: 30%;
+      left: 50%;
       transform: translateX(-50%);
       width: 6px;
       height: 6px;
@@ -74,12 +69,11 @@
 
     .text {
       text-align: center;
-      font-family: 'Sacramento', cursive, Arial, Helvetica, sans-serif;
       margin-top: 20px; /* Adjust the margin as needed */
-      margin-left: 20px;
+      margin-left: 30px;
       color: transparent; /* Hide the original text color */
-      opacity: 40%;
-      background: linear-gradient(to bottom, yellow, #000000); /* Add a subtle yellow gradient */
+      opacity: 60%;
+      background: linear-gradient(to bottom, #333300, #1a1a00); /* Add a subtle yellow gradient */
       -webkit-background-clip: text; /* Clip the gradient to the text */
       background-clip: text;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the text */
@@ -88,22 +82,22 @@
 
     @keyframes shiningText {
       from {
-        opacity: 0.2; /* Starting opacity */
+        opacity: 0.6; /* Starting opacity */
       }
       to {
-        opacity: 0.8; /* Ending opacity */
+        opacity: 1; /* Ending opacity */
       }
     }
 
-    @media (max-width: 767px) { /* mobile */
+    @media (max-width: 767px) {
       .text {
         font-size: 1rem; /* Adjust the font size as needed */
       }
     }
 
-    @media (min-width: 768px) { /* desktop */
+    @media (min-width: 768px) {
       .text {
-        font-size: 2rem; /* Adjust the font size as needed */
+        font-size: 1.5rem; /* Adjust the font size as needed */
       }
     }
   </style>

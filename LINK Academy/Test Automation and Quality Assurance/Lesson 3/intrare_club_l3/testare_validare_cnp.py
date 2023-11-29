@@ -78,12 +78,22 @@ class TestValidareCNP(unittest.TestCase):
 
 
     ### Ziua
-
     def test_zi_valida(self):
         self.assertFalse(este_cnp_valid("1641534290976"))
         self.assertFalse(este_cnp_valid("2640000290976"))
         self.assertFalse(este_cnp_valid("5041332290976"))
         self.assertFalse(este_cnp_valid("6049590290976"))
+
+    ### Februarie
+    def test_zi_februarie(self):
+        self.assertTrue(este_cnp_valid("1640229290976"))
+        self.assertTrue(este_cnp_valid("1640230290976"))
+        self.assertFalse(este_cnp_valid("1640230290976"))
+        self.assertFalse(este_cnp_valid("1640231290976"))
+
+        self.assertTrue(este_cnp_valid("1650228290976"))
+        self.assertFalse(este_cnp_valid("1650229290976"))
+        
 
     ### 31 Apr, Iunie, Sept, Noiembrie
     def test_zile_de_30(self):

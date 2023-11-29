@@ -1,5 +1,19 @@
 import datetime
 
+def este_bisect(an):
+    """
+    dacă (anul este divizibil cu 4 și anul nu este divizibil cu 100) atunci (an bisect)
+    dacă (anul este divizibil cu 400) atunci (an bisect)
+    altfel (an obișnuit)
+
+    Args:
+        an ([int]): [description]
+
+    Returns:
+        [bool]: [description]
+    """
+    return (an % 400 == 0) or ( (an % 100) and (an % 4 == 0) )
+
 
 def get_year_month_day(cnp):
 
@@ -72,6 +86,9 @@ def este_cnp_valid(cnp):
     ## V2
     if month in [4, 6, 9, 11]:
         MAX_DAYS = 30
+    ## EX: 29 februrarie, 30 februarie, 31 aprilie, etc
+    elif month == 2:
+        MAX_DAYS = 28 + este_bisect(year)
     else:
         MAX_DAYS = 31
 
@@ -79,8 +96,7 @@ def este_cnp_valid(cnp):
         return False
 
 
-    ## TODO: verificare zile per luni
-    ## EX: 29 februrarie, 30 februarie, 31 aprilie, etc
+    
 
 
 
