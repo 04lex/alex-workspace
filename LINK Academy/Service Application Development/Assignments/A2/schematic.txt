@@ -1,0 +1,7 @@
+Server-side:
+1. Database SQLite
+2. REST: Flask framework 
+
+Client-side:
+1. UI
+2. Comunicare server

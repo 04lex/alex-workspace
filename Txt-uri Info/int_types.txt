@@ -1,0 +1,38 @@
+Diferențele între int, tinyint, smallint, și bigint sunt legate de intervalul de valori pe care le pot stoca și spațiul de stocare ocupat. Aceste tipuri de date reprezintă numere întregi și au următoarele caracteristici:
+
+int (integer):
+
+Interval de valori: -2147483648 până la 2147483647
+Spațiu de stocare: 4 octeți
+tinyint:
+
+Interval de valori: -128 până la 127 (signed) sau 0 până la 255 (unsigned)
+Spațiu de stocare: 1 octet
+smallint:
+
+Interval de valori: -32768 până la 32767 (signed) sau 0 până la 65535 (unsigned)
+Spațiu de stocare: 2 octeți
+bigint:
+
+Interval de valori: -9223372036854775808 până la 9223372036854775807 (signed) sau 0 până la 18446744073709551615 (unsigned)
+Spațiu de stocare: 8 octeți
+Alegerea dintre aceste tipuri de date depinde de necesitățile specifice ale proiectului, precum și de intervalul și dimensiunea datelor pe care doriți să le stocați.
+
+
+
+
+
+Semnul (signed) sau nesemnat (unsigned) indică dacă un număr întreg poate stoca doar valori pozitive și zero (unsigned) sau poate stoca și valori negative (signed).
+
+Signed (Semnat): Poate stoca valori pozitive, zero și valori negative.
+Unsigned (Nesemnat): Poate stoca doar valori pozitive și zero.
+De exemplu:
+
+Un tinyint signed poate stoca valori în intervalul de la -128 la 127.
+Un tinyint unsigned poate stoca valori în intervalul de la 0 la 255.
+Dacă nu specificați explicit "signed" sau "unsigned" atunci când creați o coloană de tip întreg, majoritatea sistemelor îl consideră implicit "signed." Este important să alegeți între aceste două opțiuni în funcție de natura datelor pe care doriți să le stocați în coloana respectivă.
+
+
+
+
+
