@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>hello</div>
+    <div>welcome</div>
+    <div>how_are_you</div>
+
+    <script>
+
+        var language = 'de'; 
+
+        var locales = { 
+
+        'en_us':{ 
+            hello:"Hello", 
+            welcome:"Welcome to our page", 
+            how_are_you:"How are you today?" 
+        }
+        , 
+        'ro':{ 
+            hello:'Bună ziua',  
+            welcome:'Bine aţi venit pe pagina noastră', 
+            how_are_you:'Ce mai faceţi astăzi', 
+        } 
+        ,
+        'de': {
+            hello: 'Hallo',
+            welcome: 'Wilkomen auf unser Seite',
+            how_are_you: 'Was machts du Heute?'
+            }
+        }
+        
+        // creez lista
+        var divs = document.getElementsByTagName('div')
+        // iterez
+        for (let i = 0 ; i < divs.length; i++){
+            divs[i].innerHTML = locales[language][divs[i].innerHTML]
+        }
+
+        // un exemplu de if
+        var x = 3
+        if (x > 2){
+            console.log('mai mare')
+        } else {
+            console.log('nu este mai mare')
+        }
+
+    </script>
+</body>
+</html>

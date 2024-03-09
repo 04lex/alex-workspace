@@ -1,0 +1,11 @@
+What to learn to land an internship:
+
+*/ Web Developer */
+
+- understand the concept of front end and back end, the way they interact.
+- usually Django (back-end), HTML/CSS (front-end), (+React).
+- learn basics of Git
+
+Most Junior Dev Jobs require Python, Django and JS, from there you *can* reverse engineer.
+- basic understanding of wireframes, JS, HTML & CSS, Django.
+- also require different databases (MySQL/SQLite/PostGreSQL)

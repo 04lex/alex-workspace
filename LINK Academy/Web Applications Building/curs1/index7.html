@@ -1,0 +1,49 @@
+<!-- o pagina web cu todo list  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" placeholder="Adauga..">
+    <ul>
+        <li>Item</li>
+    </ul>
+
+    <button onclick="todo()">Add</button>
+
+    <script>
+        var ul = document.querySelector('ul')
+        var input = document.querySelector('input')
+
+        function todo() {
+            if (input.value.length < 2){
+                alert('Cuvantul este prea mic')
+                return
+            }
+
+        // Luam lista de 'li' si verificam daca produsul din input este deja in lista.
+
+            var lis = document.getElementsByTagName('li')
+            for (let i = 0 ; i < lis.length ; i++){
+                if (lis[i].innerHTML == input.value){
+                    alert('Item-ul este deja.')
+                    return
+                }
+            }
+
+            console.log('Functia a fost apelata')
+            var li = document.createElement('li')
+            li.innerHTML = input.value
+            ul.appendChild(li)
+            input.value = ''
+
+        }
+    </script>
+
+</body>
+</html>

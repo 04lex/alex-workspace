@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Meci</th>
+        </tr>
+
+        <tr>
+            <td>Scor</td>
+        </tr>
+
+    </table>
+    
+    <script>
+        var meci = {
+            'echipa1' : 'Liverpool',
+            'scor1' : 2,
+            'scor2': 5,
+            'echipa2' : 'Real'
+        }
+
+        var th = document.querySelector('th')
+        th.innerHTML = meci['echipa1'] + ' - ' + meci['echipa2']
+
+        // acelasi lucru intr-o singura linie de cod
+        document.querySelector('td').innerHTML = meci['scor1'] + ' - ' + meci['scor2']
+
+    </script>
+
+</body>
+</html>

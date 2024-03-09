@@ -3,7 +3,7 @@ import random
 # constante care nu se schimba
 
 MAX_LINES = 3
-MAX_BET = 100
+MAX_BET = 1000
 MIN_BET = 1
 
 ROWS = 3

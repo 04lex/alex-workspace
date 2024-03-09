@@ -1,0 +1,17 @@
+Operatori in JS!
+\\\
+
+= assignment
+== egalitate
+=== egalitate stricta
+
+ex:
+var a = 1
+var b = '1'
+
+a == b - true & a === b - false
+
+\\\
+
+!= inegalitate
+!== inegalitate stricta

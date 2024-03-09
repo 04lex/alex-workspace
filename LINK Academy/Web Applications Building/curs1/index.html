@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="paragraf">Buna ziua oameni dragi</p>
+    <p>Acesta este al doilea paragraf</p>
+    <p class="python">Python</p>
+
+    <script>
+        console.log('Sunt Ion Ai-ul')
+        x = 20
+
+        // alert('The sky is falling')
+
+        var pEl = document.getElementById('paragraf')
+        console.log(pEl)
+        pEl.innerHTML = 'Nu sunt Ion'
+
+        for ( i = 0 ; i<3; i++ ){
+
+        var h1El = document.createElement('h1')
+        h1El.innerHTML = 'Acest text a fost generat programatic de catre Ion Ai-ul'
+
+        var body = document.getElementsByTagName('body')[0]
+        body.appendChild(h1El)
+
+        }
+
+        p2 = document.getElementsByTagName('p')[1]
+        p2.style.color = 'fuchsia';
+
+        var p3 = document.getElementsByClassName('python')[0]
+        p3.style = 'background-color: red; color: white';
+
+    </script>
+</body>
+
+</html>

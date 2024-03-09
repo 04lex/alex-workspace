@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        th {
+            border: 1px solid;
+        }
+    </style>
+
+
+    <table>
+        <tr>
+            <th>Echipa 1</th>
+            <th>Echipa 2</th>
+        </tr>
+
+        <tr>
+            <td>Scor 1</td>
+            <td>Scor 2</td>
+        </tr>
+
+    </table>
+    
+    <script>
+
+        var table = document.querySelector('table')
+        table.style.border = '1px solid';
+        table.style.borderColor = 'black';
+
+        var meci = {
+            'echipa1' : 'Liverpool',
+            'scor1' : 2,
+            'scor2': 5,
+            'echipa2' : 'Real'
+        }
+
+        // intoarce o lista
+        var ths = document.getElementsByTagName('th')
+        var tds = document.getElementsByTagName('td')
+
+        // iterez prin lista
+        for (let i = 0 ; i < 2; i++){
+            ths[i].style.border = '1px solid';
+            ths[i].innerHTML = [  meci['echipa1'], meci['echipa2']  ][i]
+
+            tds[i].innerHTML = [  meci['scor1'], meci['scor2']  ][i]
+        }
+
+        // th.innerHTML = meci['echipa1'] + ' - ' + meci['echipa2']
+
+        // acelasi lucru intr-o singura linie de cod
+        //  document.querySelector('td').innerHTML = meci['scor1'] + ' - ' + meci['scor2'] 
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            min-height: 100vh;
+        }
+
+        .container{
+            background-color: blue;
+            min-height: 50vh;
+        }
+    </style>
+    
+</head>
+<body onclick="adaugaData()">
+    <h1>Dati click</h1>
+    <div class="container" onmouseenter="schimbaMesajul(true)" onmouseleave="schimbaMesajul(false)"></div>
+
+    <script>
+        function schimbaMesajul(aintrat) {
+            var h1 = document.getElementsByTagName('h1')[0]
+            if (aintrat === true){
+                h1.innerHTML = 'Inauntru'
+            }else{
+                h1.innerHTML = 'In afara'
+            }
+        }
+
+        function adaugaData() {
+
+            // 1. Iau nodul in care adaug
+            // var container = document.getElementsByTagName('div')[0];
+            // var container = document.getElementsByClassName('container')[0];
+            var container = document.querySelector('.container');
+            
+            // 2. Creez un nou nod + customizare
+            var h3 = document.createElement('h3')
+            var persoana = new Object();
+            persoana.nume = "Ion"
+            h3.innerHTML = persoana.nume
+
+
+            // 3. Leg nodul nou creat la nodul initial
+            container.appendChild(h3)
+        }
+
+    </script>
+</body>
+</html>

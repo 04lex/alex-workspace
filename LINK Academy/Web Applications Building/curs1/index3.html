@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Nume</h1>
+
+    <script>
+        var nume = ['Ion', 'Closca', 'Crisan']
+        // vreau sa crrez o lista neordonata
+        var ul = document.createElement('ul')
+        // var body = document.getElementsByTagName('body')[0]
+        var body = document.querySelector('body')
+
+        // adaugare ul in body
+        body.appendChild(ul)
+
+        //  cate un list item pentru fiecare nume din lista de nume
+
+        // ne gandim la for ca la un range, de unde incepe, pana unde se termina, 'i < 3' pentru ca sunt 3.
+        // i++ inseamna i+1
+        // let este o variabila locala, traieste doar cat este for-ul
+        for (let i = 0 ; i < 3 ; i++ ) {
+            console.log(i)
+
+            var li = document.createElement('li')
+            li.innerHTML = nume[i]
+            ul.appendChild(li)
+        }
+
+    </script>
+    
+</body>
+</html>

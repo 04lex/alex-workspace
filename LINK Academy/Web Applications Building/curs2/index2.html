@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var carte = {nume : 'Praslea', autor : 'Petre Ispirescu', data : new Date() }
+        console.log(carte)
+ 
+        var manual = {'nume' : 'Paralela 45', 'autor' : ' '}
+        console.log(manual)
+
+
+        // serializare
+        var json_carte = JSON.stringify(carte)
+        console.log(json_carte)
+
+        // deserializare
+        var retransforma_cartea = JSON.parse(json_carte)
+        console.log(retransforma_cartea)
+
+
+        function printeazaNumele() {
+            console.log(this.nume , this.autor)
+        }
+
+        x = printeazaNumele
+        carte.printeaza = printeazaNumele
+
+        manual.printeaza = printeazaNumele
+
+
+    </script>
+</body>
+</html>

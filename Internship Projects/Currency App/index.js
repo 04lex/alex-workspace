@@ -52,3 +52,4 @@ exIcon.addEventListener("click", () => {
     });
     getExchangeRate();
 });
+
