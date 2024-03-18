@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="range" name="" id="slider" value="27" min="0" max="100" onchange="modificaText()">
+    <h1>27</h1>
+
+    <script>
+        var inputEl = document.getElementById('slider')
+        var textEl = document.getElementsByTagName('h1')[0]
+        const culori = ['red', 'blue', 'green', 'yellow']
+
+// val intre 0 - 25 = rosu
+// 26 - 50 = albastru
+// 51 - 75 = verde
+// 76 - 100 = galben
+
+        function modificaText() {
+            // schimba text-ul si scrie in consola
+            textEl.innerHTML = inputEl.value 
+            index = inputEl.value / 25
+            textEl.style.backgroundColor = culori[index]
+        }
+
+        modificaText()
+    </script>
+</body>
+</html>
