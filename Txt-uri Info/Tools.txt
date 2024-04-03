@@ -1,0 +1,20 @@
+GeeksForGeeks = https://www.geeksforgeeks.org/
+# Tutorials, practice
+
+Udemy - https://www.udemy.com/course/coding-for-beginners-you-can-learn-to-code/
+# Tutorials, Internship Help
+
+W3Schools - https://www.w3schools.com/
+# Coding tutorials, practice
+
+Books:
+Cracking the Code Interview \\\ What to do for internship interviews. \\\
+
+
+
+/// Update all Pip installed pkg ///
+Powershell > pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
+Linux > pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip3 install -U 
+////////////////////////////////////
+
+
