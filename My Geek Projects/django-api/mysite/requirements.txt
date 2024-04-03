@@ -1,0 +1,6 @@
+django
+djangorestframework
+environs
+mysqlclient
+
+# pip3 install -r requirements.txt
