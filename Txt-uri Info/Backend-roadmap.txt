@@ -1,0 +1,60 @@
+Backend Development Roadmap
+
+1. Skills
+Base Python -
+    for Loops, functions, classes, Objects, (functionality)
+
+
+Small Frontend Knowledge
+    Base CSS, html5, JS
+    (?) React, Vue
+
+
+Basic Networking - (highly recommended)
+    about HTTP (Hypertext Transfer Protocol)
+          IP addresses
+          Firewalls
+          VPNs
+          why localhost works the way it does?
+
+
+Linux -
+    what linux users are
+    linux permissions
+    copy, paste, move files around
+    - make it easy working with a CLI overall
+
+
+Django & Flask - web frameworks utilizing Python
+    should learn intermediate to high
+    - authentication
+      page routing
+      apis
+      advanced features
+      django extensions
+      data bases (!)
+
+
+API (Application Programming Interface) Design
+    - json web token
+      rate limiting
+      api security
+
+
+Database (SQL) - very important
+    - create databases
+      delete databases
+      migrate databases
+      maintenance on them
+      add new tables
+      db design
+      host database, protect db
+      backup databases
+      put part of a db in another db
+
+      - can learn a little of NoSQL in case of job requirement
+
+DevOps - not really necessary
+    - you know to work with the cloud, deploy, host different things,   
+
+Git/GitHub

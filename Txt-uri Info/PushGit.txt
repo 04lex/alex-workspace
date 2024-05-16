@@ -1,0 +1,31 @@
+// create local repo
+
+1. open Git in the folder that will be used for the repository
+` git init `
+
+2. ` git add . ` to add all files in the repository
+
+3. ` git commit -m "initial commit" ` all files in the repository
+
+4. ` git status ` shows the local repository is created
+
+
+// push to github
+
+1. create new repo, copy SSH key
+
+2. open Git in the folder to be pushed
+` git remote add origin "SSH key" `
+` git push origin main -force `
+
+
+////////
+
+…or create a new repository on the command line
+echo "# npm_packages" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/04lex/npm_packages.git
+git push -u origin main
