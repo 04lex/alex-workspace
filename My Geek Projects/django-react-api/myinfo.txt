@@ -1,8 +1,0 @@
-Django & React with api, backend
-- Using venv
-
-Run web app:
-In dir .. enter env `source env/bin/activate`
-
-Run frontend in dir frontend - npm run dev
-Run backend server in dir backend - manage.py
