@@ -1,0 +1,4 @@
+([('main',
+   '/Users/lexbook/LINK Lessons/LINK/Personal Projects/Py GUI Calculator '
+   'Better/dist/main',
+   'EXECUTABLE')],)

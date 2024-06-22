@@ -1,0 +1,4 @@
+pip3 install pyinstaller
+
+integrated terminal:
+    pyinstaller --onefile -w 'file.py'
